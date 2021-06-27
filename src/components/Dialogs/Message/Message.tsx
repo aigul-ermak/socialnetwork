@@ -6,11 +6,13 @@ import s from './Message.module.css';
 //     message: string
 // }
 
+
+
     const Message = (props) => {
 
         let newMessageElement = React.createRef<HTMLTextAreaElement>();
 
-        let addPostMessage = () => {
+        let  addPostMessage = () => {
             let text = newMessageElement.current?.value;
             alert(text)
         }
